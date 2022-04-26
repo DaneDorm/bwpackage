@@ -4,12 +4,10 @@
 \alias{additions}
 \title{adds number to another number}
 \usage{
-additions(x, num)
+additions(x)
 }
 \arguments{
-\item{x}{is the second number to add}
-
-\item{num}{is the first number to add}
+\item{x}{Numbers to add}
 }
 \value{
 a string
