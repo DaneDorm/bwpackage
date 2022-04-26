@@ -50,8 +50,8 @@ addToStrs<-function(x,num,delim=""){
 #'
 addnums<-function(x,num,type="string",delim=""){
   if (type=="string"){
-    addToStr(x,num,delim)
+    addToStrs(x,num,delim)
   }else if(type=="numeric"){
-    addition(x,num)
+    additions(x,num)
   }
 }
