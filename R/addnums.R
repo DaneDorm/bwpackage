@@ -4,15 +4,14 @@
 #'
 #' @return a string
 #'
-#'
-#'
 #' @export
 
 additions<-function(x){
 
   run_sum <- 0
+  max_i <- length(x)
 
-  for (i in x) {
+  for (i in c(1:max_i)) {
     run_sum <- run_sum + x[i]
   }
   return(run_sum)
