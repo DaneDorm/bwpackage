@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     c(person("Beatrice", "Weier", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")), 
-      person("Dane", "Dormedy", , "first.last@example.com", role = c("aut", "cre"),
+      person("Dane", "Dormedy", , "first.last@example.com", role = "aut",
            comment = c(ORCID = "YOUR-ORCID-ID"))
       )
 Description: What the package does (one paragraph).

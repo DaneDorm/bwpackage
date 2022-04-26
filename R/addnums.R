@@ -1,14 +1,21 @@
 #' adds number to another number
 #'
-#' @param num is the first number to add
-#' @param x is the second number to add
+#' @param x Numbers to add
 #'
 #' @return a string
 #'
+#'
+#'
 #' @export
 
-additions<-function(x,num){
-  return(x + num)
+additions<-function(x){
+
+  run_sum <- 0
+
+  for (i in x) {
+    run_sum <- run_sum + x[i]
+  }
+  return(run_sum)
 }
 
 #'Adds number as string
