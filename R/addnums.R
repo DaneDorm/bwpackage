@@ -19,8 +19,7 @@ additions<-function(x){
 
 #'Adds number as string
 #'
-#' @param x is the string to be added to; must be a character
-#' @param num the number added to the string (numeric value will be changed to word form)
+#' @param num A vector to string together (numeric value will be changed to word form)
 #' @param delim the separator, default is ""
 #'
 #' @return a string string
@@ -29,18 +28,20 @@ additions<-function(x){
 #'
 #' @export
 #'
-addToStrs<-function(x,num,delim=""){
-  if ((is.numeric(num)==T)&(is.character(x)==T)){
-    paste(x,as.english(num),sep=delim)
-  }else{
-    warning("num must be a numeric value and x must be charcter")
-  }
+addToStrs<-function(num,delim=""){
+
+  all_char <- ifelse(!is.na(as.numeric(num)),  # convert numbers to string, leave characters
+                                      as.character(as.english(as.numeric(num))), # convert numbers to a number form, change to name, change back to character
+                                      num)
+
+  result <- paste(all_char, collapse = delim)
+  return(result)
+
 }
 
 #' Adds things together strings or simple addition
 #'
-#' @param x is the first string or number
-#' @param num is the number to add (should be numeric)
+#' @param num The vector we want to change
 #' @param type should be string or numeric, determines output
 #' @param delim if type is string, this separates the x and num
 #'
@@ -48,10 +49,12 @@ addToStrs<-function(x,num,delim=""){
 #'
 #' @export
 #'
-addnums<-function(x,num,type="string",delim=""){
-  if (type=="string"){
-    addToStrs(x,num,delim)
-  }else if(type=="numeric"){
-    additions(x,num)
+addnums<-function(num,type="string",delim=""){
+  if (type=="string" & is.character(num)){
+    addToStrs(num,delim)
+  }else if(type=="numeric" & is.numeric(num)){
+    additions(num)
+  }else {
+    return("ERROR!! Please Check Your Inputs")
   }
 }
