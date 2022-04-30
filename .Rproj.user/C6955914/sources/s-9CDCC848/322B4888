@@ -1,0 +1,27 @@
+{
+    "id": "322B4888",
+    "path": "F:/STAT431/bwpackage/R/addnums.R",
+    "project_path": "R/addnums.R",
+    "type": "r_source",
+    "hash": "1001082945",
+    "contents": "",
+    "dirty": false,
+    "created": 1650933570268.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "35,188",
+        "scrollLine": "15"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1651294982,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1651294980807,
+    "read_only": false,
+    "read_only_alternatives": []
+}

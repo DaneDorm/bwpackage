@@ -1,0 +1,26 @@
+{
+    "id": "3BF2A327",
+    "path": "F:/STAT431/bwpackage/tests/testthat/test-addnums.R",
+    "project_path": "tests/testthat/test-addnums.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1650955306950.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "25,53",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1651294362,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1651294361115,
+    "read_only": false,
+    "read_only_alternatives": []
+}
