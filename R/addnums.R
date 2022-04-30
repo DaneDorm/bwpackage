@@ -33,7 +33,7 @@ addToStrs<-function(num,delim=""){
   all_char <- ifelse(!is.na(as.numeric(num)),  # convert numbers to string, leave characters
                                       as.character(as.english(as.numeric(num))), # convert numbers to a number form, change to name, change back to character
                                       num)
-
+# Credit where credit is due, the test if strings could be converted to numbers came from here: https://stackoverflow.com/questions/13638377/test-for-numeric-elements-in-a-character-string
   result <- paste(all_char, collapse = delim)
   return(result)
 
